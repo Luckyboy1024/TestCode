@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
 #include "Process_scheduling.h"
+#include "Queue.h"
 
 void Swap(Process* arr1, Process* arr2)
 {
@@ -72,11 +73,59 @@ void _FCFS(Process *arr, int n)
 
 void _SJF(Process *arr, int n)
 {
+	int tag = 0;
+	int i = 0;
+	int j = 0;
+	RT_BubbleSort(arr, n);
+	arr[0].data._FT = arr[0].time_reach + arr[0].time_serve;
+	arr[0].data._TT = arr[0].time_serve;
+	arr[0].data._QTT = arr[0].data._TT / arr[0].time_serve;
 
+	for (i = 1; i < n; i++)
+	{
+		// 判断在前一进程完成之前,有哪些进程已到达
+		for (j = i; (j < n) && (tag == 0); j++)
+		{
+			if (arr[j].time_reach > arr[j - 1].data._FT)
+			{
+				if (!(j > i+1))	//i==j表示一个都没有 i= j-1只有一个，也不用服务排序
+				{
+					break;
+				}
+				//对 i ~ j-1 间的进程按服务时间排序
+				ST_BubbleSort(&arr[i], j - i);
+				break;
+			}
+		}
+		// 如果剩下全部进程都已到达，给标记变量tag赋1
+		if (j == n)
+		{
+			ST_BubbleSort(&arr[i], j - i);
+			tag = 1;
+		}
+
+		// arr[i] 就是此时服务时间最短的进程
+		if (i == j)
+		{
+			arr[i].data._FT = arr[i].time_reach + arr[i].time_serve;
+		}
+		else
+		{
+			arr[i].data._FT = arr[i - 1].data._FT + arr[i].time_serve;
+		}
+		arr[i].data._TT = arr[i].data._FT - arr[i].time_reach;
+		arr[i].data._QTT = arr[i].data._TT / arr[i].time_serve;
+	}
 }
 
 void _RR(Process *arr, int n)
 {
+	int slot = 0;		//时间片
+	int time = 0;
+	Queue* q;
+	//Process* a = NULL;
+	printf("\n输入时间片 :>_ ");
+	scanf("%d", &slot);
 //	Queue* Q;
 //	BubbleSort(arr, n);
 //	QueuePush(Q, arr + 0);

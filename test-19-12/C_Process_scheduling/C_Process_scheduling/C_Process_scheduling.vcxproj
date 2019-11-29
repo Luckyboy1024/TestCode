@@ -66,10 +66,13 @@
   <ItemGroup>
     <ClCompile Include="main.c" />
     <ClCompile Include="Process_scheduling.c" />
+    <ClCompile Include="RR_queue.c" />
+    <ClCompile Include="test.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
     <ClInclude Include="Process_scheduling.h" />
+    <ClInclude Include="Queue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -21,12 +21,21 @@
     <ClCompile Include="Process_scheduling.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="RR_queue.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="main.h">
+    <ClInclude Include="Process_scheduling.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Process_scheduling.h">
+    <ClInclude Include="Queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
