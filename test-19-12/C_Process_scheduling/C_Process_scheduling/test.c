@@ -69,6 +69,7 @@ void _input(int n, Process* arr)
 
 void start()
 {
+	printf("hello\n");
 	Process arr[_NUM];
 	int input = 0;
 	printf("进程数目 :>_ ");
