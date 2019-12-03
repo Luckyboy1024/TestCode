@@ -29,6 +29,8 @@ typedef struct process 		// 进程
 
 // 函数声明
 
+
+
 void BubbleSort(Process *arr, int n);
 void Swap(Process* arr1, Process* arr2);
 
