@@ -33,10 +33,14 @@ typedef struct process 		// 进程
 
 void BubbleSort(Process *arr, int n);
 void Swap(Process* arr1, Process* arr2);
+void InitProcess(Process* p);
 
 
 void _FCFS(Process *arr, int n);
 void _SJF(Process *arr, int n);
 void _RR(Process *arr, int n);
 
+void RR_HeadPush(Process* arr, int size);		//队头移到队尾
+void RR_Push(Process* arr, Process*src, int size);		//插入队尾
+void RR_Pop(Process* arr, int size);
 

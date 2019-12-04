@@ -1,7 +1,17 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
+#include "main.h"
 #include "Process_scheduling.h"
 #include "Queue.h"
+
+void InitProcess(Process* p)
+{
+	p->time_reach = 0.0;
+	p->time_serve = 0.0;
+	p->data._FT = 0.0;
+	p->data._QTT = 0.0;
+	p->data._TT = 0.0;
+}
 
 void Swap(Process* arr1, Process* arr2)
 {
@@ -9,6 +19,8 @@ void Swap(Process* arr1, Process* arr2)
 	*arr1 = *arr2;
 	*arr2 = tmp;
 }
+
+
 
 // 按进程号排序
 void PN_BubbleSort(Process *arr, int n)
@@ -120,14 +132,83 @@ void _SJF(Process *arr, int n)
 
 void _RR(Process *arr, int n)
 {
-	int slot = 0;		//时间片
-	int time = 0;
-	Queue* q;
-	//Process* a = NULL;
+	Process List[_NUM];			//轮转队列、等待队列
+	int slot = 0;				//时间片
+	int time = 0;				//当前时间
+	int a = 0;					// arr  ： a==n 时 arr[a-1]最后一个元素
+	int b = 0;					// List 队列元素个数
+	int tag = -1;
 	printf("\n输入时间片 :>_ ");
 	scanf("%d", &slot);
+	RT_BubbleSort(arr, n);
+	
+	time = arr[0].time_reach - slot;
+
+	for (a = 0; a < n; ++a)
+	{
+		time += slot;
+		// time时刻有新进程到达
+		if (time >= arr[a].time_reach)
+		{
+			//进入等待队列队尾
+			RR_Push(List, arr, b);
+			b++;
+		}
+		if (-1 == tag)
+		{
+			//do nothing;
+		}
+		else if (0 == tag)
+		{
+			// 队头元素放队尾
+			RR_HeadPush(List, b);
+		}
+		else if (1 == tag)
+		{
+			// pop 首元素
+			RR_Pop(List, b);
+		}
+		// 等待队列判空
+		if (!empty(List))	//不为空
+		{
+			// 队头执行
+			
+			// 
+			if (List[0].time_serve <= slot)
+			{
+				time += List[0].time_serve;
+				List[0].data._FT = time;
+				tag = 1;
+			}
+			else
+			{
+				List[0].time_serve -= slot;
+				tag = 0;
+			}
+			break;
+		}
+		if (n == a)		// 程序走完
+		{
+			return 0;
+		}
+
+	}
+	for (int i = 0; i < n; ++i)
+	{
+		arr[i].data._TT = arr[i].data._FT - arr[i].time_reach;
+		arr[i].data._QTT = arr[i].data._TT / arr[i].time_serve;
+	}
+}
+
+
+#if 0
+
+//Queue* q;
+//Process* a = NULL;
+
 //	Queue* Q;
 //	BubbleSort(arr, n);
 //	QueuePush(Q, arr + 0);
 
-}
+
+#endif

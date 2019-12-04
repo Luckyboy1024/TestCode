@@ -1,5 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
+#if 0
+
 #ifndef __QUEUE_H__
 #define __QUEUE_H__
 
@@ -27,3 +29,6 @@ int QueueEmpty(Queue* q);
 
 
 #endif //__QUEUE_H__
+
+
+#endif

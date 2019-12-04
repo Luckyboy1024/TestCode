@@ -66,6 +66,7 @@
   <ItemGroup>
     <ClCompile Include="main.c" />
     <ClCompile Include="Process_scheduling.c" />
+    <ClCompile Include="RR.c" />
     <ClCompile Include="RR_queue.c" />
     <ClCompile Include="test.c" />
   </ItemGroup>
