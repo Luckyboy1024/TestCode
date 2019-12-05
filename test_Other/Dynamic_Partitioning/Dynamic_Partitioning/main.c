@@ -7,15 +7,68 @@
 #define _NUM 10
 
 
-void P_ListInit(Partition* arr, int n)
+
+void assign(Partition* arr, int size)
 {
-	for (int i = 0; i < n; ++i)
-	{
-		arr[i].init_addr = 0;			// 始址为 0
-		arr[i].Partition_size = 0;		// 大小为 0
-		arr[i].state = 'T';				// 已分配
-	}
+	int input = 0;
+	do{
+		printf("请选择 :>_ 1. 最适应  2. 循环最适应  3. 最佳适应  4. 最坏适应  0.exit\n");
+		scanf("%d", &input);
+		if (1 == input)
+		{
+			//最适应算法
+		}
+		else if (2 == input)
+		{
+			//循环最适应
+		}
+		else if (3 == input)
+		{
+			//最佳适应算法
+		}
+		else if (4 == input)
+		{
+			//最坏适应算法
+		}
+		else
+		{
+			return 0;
+		}
+	} while (input);
 }
+
+void recycle(Partition* arr, int size)
+{
+	int pathaddr = 0;
+	Print_List(arr, size);
+	printf("输入所要回收分区的始址 :>_ ");
+	scanf("%d", &pathaddr);
+}
+
+
+void choose(Partition* arr, int size)
+{
+	int input = 0;
+	do{
+		printf("请选择 :>_   1. 分配空间   2. 空间回收   0.exit\n");
+		scanf("%d", &input);
+		if (1 == input)
+		{
+			assign(arr, size);
+		}
+		else if (2 == input)
+		{
+			recycle(arr, size);
+		}
+		else
+		{
+			return 0;
+		}
+	} while (input);
+}
+
+
+
 
 void start()
 {
@@ -33,10 +86,13 @@ void start()
 	for (int i = 1; i <= P_num; ++i)
 	{
 		printf("分区号 :>_ %d\n", i);
-		printf("\t分区大小 :>_ "); scanf("%d", &P_list[i-1]);
-		printf("\t分区始址 :>_ "); scanf("%d", &P_list[i-1]);
+		printf("\t分区大小 :>_ "); scanf("%d", &P_list[i-1].Partition_size);
+		printf("\t分区始址 :>_ "); scanf("%d", &P_list[i-1].init_addr);
 	}
-	
+	Print_List(P_list, P_num);
+	choose(P_list, P_num);
+	Print_List(P_list, P_num);
+
 
 }
 
