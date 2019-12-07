@@ -208,9 +208,66 @@ void recycle(Partition* DP_list, Partition* P_list, uint64_t DP_num, uint64_t P_
 {
 	int pathaddr = 0;
 	Print_List(P_list, P_num);
-	printf("输入所要回收分区的始址 :>_ ");
-	scanf("%d", &pathaddr);
-
+	do{
+		printf("输入所要回收分区的始址 :>_ ");
+		scanf("%d", &pathaddr);
+		Sort_Addr(P_list, P_num);
+		for (int i = 0; i < P_num; ++i)
+		{
+			if (P_list[i].init_addr == pathaddr)
+			{
+				if (P_list[i].state == 'F')
+				{
+					P_list[i].state = 'T';				// 未分配
+					if (P_list[i - 1].state == 'T')
+					{
+						for (int j = 0; j < DP_num; ++j)
+						{
+							if (P_list[i].init_addr == DP_list[j].init_addr + DP_list[j].Partition_size)
+							{
+								DP_list[j].Partition_size += P_list[i].Partition_size;
+								break;
+							}
+						}
+						P_list[i - 1].Partition_size += P_list[i].Partition_size;
+						P_list[i].init_addr = _length;
+						P_list[i].Partition_size = 0;
+						P_list[i].state = 'F';
+						Sort_Addr(P_list, P_num);
+						P_num--;
+					}
+					if (P_list[i + 1].state == 'T')
+					{
+						for (int j = 0; j < DP_num; ++j)
+						{
+							if (DP_list[j].init_addr == P_list[i].init_addr + P_list[i].Partition_size)
+							{
+								DP_list[j].init_addr -= P_list[i].Partition_size;
+								DP_list[j].Partition_size += P_list[i].Partition_size;
+								break;
+							}
+						}
+						P_list[i].Partition_size += P_list[i+1].Partition_size;
+						
+						P_list[i+1].init_addr = _length;
+						P_list[i+1].Partition_size = 0;
+						P_list[i+1].state = 'F';
+						Sort_Addr(P_list, P_num);
+						P_num--;
+					}
+				}
+				else
+				{
+					printf("该分区未分配，请重新选择\n"); break;
+				}
+			}
+			else if (P_list[i].init_addr > pathaddr)
+			{
+				printf("找不到目标分区的始址\n");
+				break;
+			}
+		}
+	} while (1);
 }
 
 
