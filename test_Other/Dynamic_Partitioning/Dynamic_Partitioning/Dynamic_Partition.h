@@ -22,3 +22,7 @@ typedef struct List{
 void Print_List(Partition* arr, int size);
 void P_ListInit(Partition* arr, int size);
 
+void Sort_Addr(Partition* arr, int size);
+void Sort_Size(Partition* arr, int size);		// 按分区大小排序
+void R_Sort_Size(Partition* arr, int size);		// 按分区大小排序 反向
+
