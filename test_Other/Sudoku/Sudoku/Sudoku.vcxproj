@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C9586AD5-F05B-4B89-A73E-EE8BF4793E84}</ProjectGuid>
-    <RootNamespace>Bankers_algorithm</RootNamespace>
+    <ProjectGuid>{4432D263-B4F1-4565-B6ED-2BCFDAB9B546}</ProjectGuid>
+    <RootNamespace>Sudoku</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -64,13 +64,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Banker.c" />
-    <ClCompile Include="safety.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="sudoku.c" />
     <ClCompile Include="test.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Banker.h" />
-    <ClInclude Include="safety.h" />
+    <ClInclude Include="main.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
