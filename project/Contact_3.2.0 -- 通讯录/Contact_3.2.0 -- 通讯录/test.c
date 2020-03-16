@@ -27,6 +27,7 @@ void start()
 		switch (input)
 		{
 		case _EXIT: //退出
+			DestroyContacts(&contacts);
 			break;
 		case _ADD:  //添加
 			AddContacts(&contacts); // 添加一个人到通讯录

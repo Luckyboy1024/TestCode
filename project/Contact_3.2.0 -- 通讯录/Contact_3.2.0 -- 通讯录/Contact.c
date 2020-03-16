@@ -1,6 +1,27 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
 #include "Contact.h"
+
+// 加载
+void LoadContacts(Contacts *pCon)
+{
+	FILE *pf = fopen("Contacts.bat", "rb");
+	assert(pf != NULL);
+	PersonInfo tmp = { 0 };
+	while (fread(&tmp, sizeof(PersonInfo), 1, pf) > 0)
+	{
+		CheckFull(pCon);
+		pCon->per[pCon->usedSize] = tmp;
+		pCon->usedSize++;
+	}
+	if (fclose(pf))
+	{
+		perror("close file");
+	}
+	pf = NULL;
+}
+
+
 void InitContacts(Contacts *pCon)
 {
 	//通讯录初始化: 数组，usedsize
@@ -13,6 +34,8 @@ void InitContacts(Contacts *pCon)
 	pCon->per = (PersonInfo  *)malloc(sizeof(PersonInfo)*pCon->capticty);      // stdlib.h
 	assert(pCon->per != NULL);
 	memset(pCon->per, 0, sizeof(PersonInfo)*pCon->capticty);
+	//加载
+	LoadContacts(pCon);
 }
 //判断通讯录是否为满，返回值 0 ：表示增容失败；1 ：表示增容成功
 // 注：static 修饰的函数或变量，其作用域仅在当前 .c 文件内
@@ -127,9 +150,28 @@ void ClearContacts(Contacts *pCon)
 {
 	pCon->usedSize = 0;
 }
+
+// 保存
+void SaveContact(Contacts *pCon)
+{
+	// 文件写。fwrite
+	FILE *pf = fopen("Contacts.bat", "wb");
+	assert(pf != NULL);
+	for (int i = 0; i < pCon->usedSize; i++)
+	{
+		fwrite(pCon->per + i, sizeof(PersonInfo), 1, pf);
+	}
+	if (fclose(pf))
+	{
+		perror("close file");
+	}
+	pf = NULL;
+}
+
 // 摧毁
 void DestroyContacts(Contacts *pCon)
 {
+	SaveContact(pCon);
 	assert(pCon != NULL);
 	free(pCon->per);
 	pCon->per = NULL;
