@@ -1,0 +1,41 @@
+﻿生成启动时间为 19.12.7 11:54:04。
+     1>项目“D:\0.Study_Work\git资源\Gitee\Daywork_Test\test_Other\Dynamic_Partitioning\Dynamic_Partitioning\Dynamic_Partitioning.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\2.My_App\3. 学习软件\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
+         main.c
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(122): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(123): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(126): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(127): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(137): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(143): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(168): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(169): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(172): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(173): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(187): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(188): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(191): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(192): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(202): warning C4098: “assign”:“void”函数返回值
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(210): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(214): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(236): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(255): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(290): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(294): warning C4098: “choose”:“void”函数返回值
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(313): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(314): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(315): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(326): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(371): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>d:\0.study_work\git资源\gitee\daywork_test\test_other\dynamic_partitioning\dynamic_partitioning\main.c(373): warning C4244: “函数”: 从“uint64_t”转换到“int”，可能丢失数据
+       Link:
+         D:\2.My_App\3. 学习软件\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\0.Study_Work\git资源\Gitee\Daywork_Test\test_Other\Dynamic_Partitioning\Debug\Dynamic_Partitioning.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\0.Study_Work\git资源\Gitee\Daywork_Test\test_Other\Dynamic_Partitioning\Debug\Dynamic_Partitioning.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\0.Study_Work\git资源\Gitee\Daywork_Test\test_Other\Dynamic_Partitioning\Debug\Dynamic_Partitioning.lib" /MACHINE:X86 Debug\Dynamic_Partition.obj
+         Debug\main.obj
+         Dynamic_Partitioning.vcxproj -> D:\0.Study_Work\git资源\Gitee\Daywork_Test\test_Other\Dynamic_Partitioning\Debug\Dynamic_Partitioning.exe
+     1>已完成生成项目“D:\0.Study_Work\git资源\Gitee\Daywork_Test\test_Other\Dynamic_Partitioning\Dynamic_Partitioning\Dynamic_Partitioning.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.85
