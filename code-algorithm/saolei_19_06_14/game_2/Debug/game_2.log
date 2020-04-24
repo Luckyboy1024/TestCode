@@ -1,0 +1,28 @@
+﻿生成启动时间为 19.6.14 11:58:22。
+     1>项目“D:\Classcode\Class_study\C_study\Game_program\game_2\game_2\game_2.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\2.学习软件\vs2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt game.c test.c
+         test.c
+     1>d:\classcode\class_study\c_study\game_program\game_2\game_2\test.c(28): warning C4048: “char (*)[9]”和“char [11][11]”数组的下标不同
+     1>d:\classcode\class_study\c_study\game_program\game_2\game_2\test.c(29): warning C4048: “char (*)[9]”和“char [11][11]”数组的下标不同
+     1>d:\classcode\class_study\c_study\game_program\game_2\game_2\test.c(34): warning C4013: “First_tip”未定义；假设外部返回 int
+     1>d:\classcode\class_study\c_study\game_program\game_2\game_2\test.c(35): warning C4048: “char (*)[9]”和“char [11][11]”数组的下标不同
+     1>d:\classcode\class_study\c_study\game_program\game_2\game_2\test.c(36): warning C4013: “Game_end”未定义；假设外部返回 int
+     1>d:\classcode\class_study\c_study\game_program\game_2\game_2\test.c(38): warning C4098: “game”:“void”函数返回值
+     1>d:\classcode\class_study\c_study\game_program\game_2\game_2\test.c(40): warning C4013: “Sweep_mine”未定义；假设外部返回 int
+         game.c
+     1>d:\classcode\class_study\c_study\game_program\game_2\game_2\game.c(4): warning C4028: 形参 1 与声明不同
+     1>d:\classcode\class_study\c_study\game_program\game_2\game_2\game.c(207): warning C4098: “First_tip”:“void”函数返回值
+     1>d:\classcode\class_study\c_study\game_program\game_2\game_2\game.c(261): warning C4098: “Sweep_mine”:“void”函数返回值
+     1>d:\classcode\class_study\c_study\game_program\game_2\game_2\game.c(273): warning C4013: “Game_end”未定义；假设外部返回 int
+     1>d:\classcode\class_study\c_study\game_program\game_2\game_2\game.c(275): warning C4098: “Sweep_mine”:“void”函数返回值
+         正在生成代码...
+       Link:
+         E:\2.学习软件\vs2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Classcode\Class_study\C_study\Game_program\game_2\Debug\game_2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Classcode\Class_study\C_study\Game_program\game_2\Debug\game_2.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Classcode\Class_study\C_study\Game_program\game_2\Debug\game_2.lib" /MACHINE:X86 Debug\game.obj
+         Debug\test.obj
+         game_2.vcxproj -> D:\Classcode\Class_study\C_study\Game_program\game_2\Debug\game_2.exe
+     1>已完成生成项目“D:\Classcode\Class_study\C_study\Game_program\game_2\game_2\game_2.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.40

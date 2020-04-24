@@ -1,0 +1,40 @@
+﻿生成启动时间为 19.12.10 0:42:33。
+     1>项目“D:\0.Study_Work\git资源\Github\Testcode_day\test-Others\test-一元多项式相加\test-一元多项式相加\test-一元多项式相加.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\2.My_App\3. 学习软件\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
+         test.cpp
+     1>d:\0.study_work\git资源\github\testcode_day\test-others\test-一元多项式相加\test-一元多项式相加\test.cpp(10): warning C4005: “OVERFLOW”: 宏重定义
+                 d:\2.my_app\3. 学习软件\vs2013\vc\include\math.h(982) : 参见“OVERFLOW”的前一个定义
+       Link:
+         D:\2.My_App\3. 学习软件\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\0.Study_Work\git资源\Github\Testcode_day\test-Others\test-一元多项式相加\Debug\test-一元多项式相加.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\0.Study_Work\git资源\Github\Testcode_day\test-Others\test-一元多项式相加\Debug\test-一元多项式相加.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\0.Study_Work\git资源\Github\Testcode_day\test-Others\test-一元多项式相加\Debug\test-一元多项式相加.lib" /MACHINE:X86 Debug\base.obj
+         Debug\LinkList.obj
+         Debug\main.obj
+         Debug\Polynomial.obj
+         Debug\test.obj
+     1>test.obj : error LNK2005: "void __cdecl AddPolyn(struct LinkList &,struct LinkList &)" (?AddPolyn@@YAXAAULinkList@@0@Z) 已经在 Polynomial.obj 中定义
+     1>test.obj : error LNK2005: "int __cdecl Append(struct LinkList *,struct LNode *)" (?Append@@YAHPAULinkList@@PAULNode@@@Z) 已经在 LinkList.obj 中定义
+     1>test.obj : error LNK2005: "void __cdecl CreatPolyn(struct LinkList &,int)" (?CreatPolyn@@YAXAAULinkList@@H@Z) 已经在 Polynomial.obj 中定义
+     1>test.obj : error LNK2005: "int __cdecl DelFirst(struct LinkList *,struct LNode *,struct LNode * *)" (?DelFirst@@YAHPAULinkList@@PAULNode@@PAPAU2@@Z) 已经在 LinkList.obj 中定义
+     1>test.obj : error LNK2005: "void __cdecl DestroyPolyn(struct LinkList &)" (?DestroyPolyn@@YAXAAULinkList@@@Z) 已经在 Polynomial.obj 中定义
+     1>test.obj : error LNK2005: "void __cdecl FreeNode(struct LNode * *)" (?FreeNode@@YAXPAPAULNode@@@Z) 已经在 LinkList.obj 中定义
+     1>test.obj : error LNK2005: "struct term __cdecl GetCurElem(struct LNode *)" (?GetCurElem@@YA?AUterm@@PAULNode@@@Z) 已经在 LinkList.obj 中定义
+     1>test.obj : error LNK2005: "struct LNode * __cdecl GetHead(struct LinkList)" (?GetHead@@YAPAULNode@@ULinkList@@@Z) 已经在 LinkList.obj 中定义
+     1>test.obj : error LNK2005: "int __cdecl InitList(struct LinkList *)" (?InitList@@YAHPAULinkList@@@Z) 已经在 LinkList.obj 中定义
+     1>test.obj : error LNK2005: "int __cdecl InsFirst(struct LinkList *,struct LNode *,struct LNode *)" (?InsFirst@@YAHPAULinkList@@PAULNode@@1@Z) 已经在 LinkList.obj 中定义
+     1>test.obj : error LNK2005: "int __cdecl ListEmpty(struct LinkList)" (?ListEmpty@@YAHULinkList@@@Z) 已经在 LinkList.obj 中定义
+     1>test.obj : error LNK2005: "int __cdecl ListTraverse(struct LinkList,void (__cdecl*)(struct term))" (?ListTraverse@@YAHULinkList@@P6AXUterm@@@Z@Z) 已经在 LinkList.obj 中定义
+     1>test.obj : error LNK2005: "int __cdecl LocateElemP(struct LinkList,struct term,struct LNode * *,int (__cdecl*)(struct term,struct term))" (?LocateElemP@@YAHULinkList@@Uterm@@PAPAULNode@@P6AH11@Z@Z) 已经在 LinkList.obj 中定义
+     1>test.obj : error LNK2005: "int __cdecl MakeNode(struct LNode * *,struct term)" (?MakeNode@@YAHPAPAULNode@@Uterm@@@Z) 已经在 LinkList.obj 中定义
+     1>test.obj : error LNK2005: "struct LNode * __cdecl NextPos(struct LNode *)" (?NextPos@@YAPAULNode@@PAU1@@Z) 已经在 LinkList.obj 中定义
+     1>test.obj : error LNK2005: "int __cdecl PolynLength(struct LinkList)" (?PolynLength@@YAHULinkList@@@Z) 已经在 Polynomial.obj 中定义
+     1>test.obj : error LNK2005: "void __cdecl PrintPolyn(struct LinkList)" (?PrintPolyn@@YAXULinkList@@@Z) 已经在 Polynomial.obj 中定义
+     1>test.obj : error LNK2005: "int __cdecl Remove_Polyn(struct LinkList *,struct LNode *)" (?Remove_Polyn@@YAHPAULinkList@@PAULNode@@@Z) 已经在 Polynomial.obj 中定义
+     1>test.obj : error LNK2005: "int __cdecl SetCurElem(struct LNode *,struct term)" (?SetCurElem@@YAHPAULNode@@Uterm@@@Z) 已经在 LinkList.obj 中定义
+     1>test.obj : error LNK2005: "int __cdecl cmp(struct term,struct term)" (?cmp@@YAHUterm@@0@Z) 已经在 Polynomial.obj 中定义
+     1>test.obj : error LNK2005: "void __cdecl visit(struct term)" (?visit@@YAXUterm@@@Z) 已经在 LinkList.obj 中定义
+     1>D:\0.Study_Work\git资源\Github\Testcode_day\test-Others\test-一元多项式相加\Debug\test-一元多项式相加.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
+     1>已完成生成项目“D:\0.Study_Work\git资源\Github\Testcode_day\test-Others\test-一元多项式相加\test-一元多项式相加\test-一元多项式相加.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.27

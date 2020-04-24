@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C_Schedule", "C_Schedule.vcxproj", "{AC519B4C-33DD-41C9-AB1F-1D0C2206FF85}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Scheduling algorithm", "..\test_1911\Scheduling algorithm\Scheduling algorithm\Scheduling algorithm.vcxproj", "{AB993095-1156-46CD-BEC1-F0E77612F702}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC519B4C-33DD-41C9-AB1F-1D0C2206FF85}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AC519B4C-33DD-41C9-AB1F-1D0C2206FF85}.Debug|Win32.Build.0 = Debug|Win32
+		{AC519B4C-33DD-41C9-AB1F-1D0C2206FF85}.Release|Win32.ActiveCfg = Release|Win32
+		{AC519B4C-33DD-41C9-AB1F-1D0C2206FF85}.Release|Win32.Build.0 = Release|Win32
+		{AB993095-1156-46CD-BEC1-F0E77612F702}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AB993095-1156-46CD-BEC1-F0E77612F702}.Debug|Win32.Build.0 = Debug|Win32
+		{AB993095-1156-46CD-BEC1-F0E77612F702}.Release|Win32.ActiveCfg = Release|Win32
+		{AB993095-1156-46CD-BEC1-F0E77612F702}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
